@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/************************
+  Navigation bar logo
+*************************/
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 0.4px solid rgb(34, 33, 33);
+  border-radius: 40px;
+  margin: 10px 0;
+}
+
+
+/********************
+    Navigation Bar
+ *******************/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav-list {
+  width: 70%;
+  /* background-color:black; */
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 25px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.nav-list li a:active{
+  color: grey;
+}
+
+.rightNav {
+  /* background-color: salmon; */
+  width: 50%;;
+  text-align: right;
+  padding: 0 18px;
+}
+
+#search {
+  padding: 6px 0px;
+  font-size: 16px;
+  border-radius: 13px;
+  border: 2px solid grey;
+}
+
+
+/******************
+  Home section
+*******************/
+
+.background {
+  background: rgba(0, 0, 0, 0.6) url("../img/bg 2.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  max-width: 61%;
+  height: 70%;
+}
+
+.firstsection {
+  height: 100vh;
+}
+
+.first-half {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-half {
+  width: 40%;
+}
+
+.second-half img {
+  width: 70%;
+  padding: 10px;
+  border-radius: 110px;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 40px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+
+/*****************
+      Buttons
+*****************/
+
+.btn {
+  font-size: 18px;
+  padding: 5px 7px;
+  margin: 8px 2px;
+  cursor: pointer;
+  border-radius: 6px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-family: 'Ubuntu', sans-serif;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  color: grey;
+  background-color: none;
+  border: 1px solid grey;
+  
+}
+
+.btn-sm {
+  vertical-align: center;
+  padding: 4px 7px;
+  font-size: 16px;
+}
+
+.btn-dark{
+  color:black;
+  border: 2px solid grey;
+  font-size: 20px;
+  transition: 0.05s;
+}
+
+
+/********************
+  Services section
+*********************/
+
+.section {
+  /* height: 360px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 50px 0;
+}
+
+.sectionsubtag {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0px 50px;
+}
+
+.imgfluid-3 {
+  width: 220px;
+  margin-top: 13px;
+}
+
+.imgfluid-2 {
+  width: 220px;
+  margin-top: 8px;
+}
+.imgfluid{
+  width: 220px;
+  margin-top: 15px;
+}
+/* .imgfluid-4{
+  width: 220px;
+} */
+
+.thumbnail img{
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.sectionTag {
+  padding: 11px 0;
+}
+
+
+/*********************
+  Contact section
+**********************/
+
+.contact {
+  background-color: #f6f5f4;
+  height: 800px;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 35px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.form{
+  max-width: 62%;
+  margin: 25px auto;
+}
+
+.form-input{
+  width: 100%;  
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin: 15px 0;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/******************
+  Footer section
+*******************/
+
+.text-footer{
+  text-align: center;
+  padding: 26px 0;
+  /* font-size: 20px; */
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+/***************
+  Menu icon
+****************/
+.burger{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.line{
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+
